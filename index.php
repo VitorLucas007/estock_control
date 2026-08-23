@@ -25,6 +25,12 @@ switch ($route) {
     case 'cadastrar_produto':
         $produtoController->create();
         break;
+    case 'editar_produto':
+        $produtoController->update();
+        break;
+    case 'excluir_produto':
+        $produtoController->delete();
+        break;
     default:
         $produtoController->index();
         break;
